@@ -50,6 +50,19 @@ curl -X POST http://localhost:3000/v1/count_tokens \
 |------|--------|------|
 | PORT | 3000 | 服务端口 |
 
+### 修改端口示例
+
+```bash
+# 本地开发
+PORT=8080 npm run dev
+
+# 生产环境
+PORT=8080 npm start
+
+# Docker
+docker run -p 8080:8080 -e PORT=8080 ghcr.io/fengerwoo/anthropic-tokenizer
+```
+
 ## License
 
 MIT
